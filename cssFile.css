@@ -10,9 +10,10 @@ body{
 	background: #f1f1f1;
 }
 
+/*Banner with the name of Gordan Ramsey*/
 .banner{
 	padding:30px;
-	font-size: 40px;
+	font-size: 50px;
 	text-align: left;
 	height: 255px;
 	background-image: url("http://www.marinabaysands.com/content/dam/singapore/marinabaysands/master/main/home/entertainment/entertainment-news/chef-gordon-ramsay-interview-sands-profile/gordon-ramsay-video-banner.jpg");
@@ -21,10 +22,11 @@ body{
 
 /*navigation bar on the left*/
 ul{
+	float: left;
+	width: 400px;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	width:15%;
 	background-color: #f1f1f1;
 	height: 100%;
 	overflow: auto;
@@ -50,10 +52,24 @@ li a:hover:not(.active){
 	color: white;
 } 
 
-.content{
-	margin-left:25%;
+.right{
+	float:left; 
+	/*margin-left:0%;*/
 	padding:1px 16px;
 	height:1000px;
+	width: 75%;
 }
 
+/*
+.left{
+	float: left;
+	width: 25%;
+}*/
+
+.flex{
+	flex-direction: horizontal;
+	content:"";
+	display: flex;
+	clear: both;
+}
 
